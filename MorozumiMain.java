@@ -33,7 +33,7 @@ public class MorozumiMain{
 		int kind = new Scanner(System.in).nextInt();
 
 		//トッピング配列をシャッフル
-		for(int i=0; i<TOPPINGS.length; i++){
+		for(int i=0; i<TOPPINGS.length-1; i++){
 			int index = new Random().nextInt(TOPPINGS.length-i)+i;
 			String temp=TOPPINGS[index];
 			TOPPINGS[index]=TOPPINGS[i];
